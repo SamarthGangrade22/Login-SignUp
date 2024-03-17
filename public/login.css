@@ -1,0 +1,188 @@
+/* Default styles */
+body {
+    background-image: url('./discs.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    color: aliceblue;
+    font-family: cursive;
+    font-size: large;
+}
+
+.header {
+    padding-left: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.login-page {
+    width: 100%; /* Adjusted for responsiveness */
+    padding: 10% 0 0; /* Adjusted for responsiveness */
+    margin: auto;
+}
+
+.form {
+    max-width: 360px;
+    margin: 8% auto 100px;
+    padding: 45px;
+    text-align: center;
+    background:linear-gradient(0deg, #373737, #181a18);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    font-size: 25px;
+    margin-left: 5%;
+    min-height: 500px;
+}
+
+.form input {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background:linear-gradient(270deg, #353636, #181a18);
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+.form button {
+    font-family: cursive;
+    text-transform: uppercase;
+    outline: 0;
+    background-color: #151919;
+    background-image: linear-gradient(45deg, #353636, #181a18);
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 16px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+}
+
+.form .message {
+    margin: 15px 0 0;
+    color: #e44242;
+    font-size: 18px;
+}
+
+.form .message a {
+    color: #10ed10;
+    text-decoration: none;
+}
+
+.logo {
+    display: flex;
+}
+.button1{
+    height: 40px;
+    margin-top: 30px;
+}
+.button2 {
+    font-family: cursive;
+    
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .header {
+        padding-left: 5%; /* Adjusted padding for smaller screens */
+    }
+    .login-page {
+        padding: 20% 0 0; /* Adjusted padding for smaller screens */
+    }
+    .form {
+        margin: 8% auto 50px; /* Adjusted margin for smaller screens */
+    }
+    .form button {
+        font-size: 14px; /* Adjusted font size for smaller screens */
+    }
+    .form .message {
+        font-size: 16px; /* Adjusted font size for smaller screens */
+    }
+}
+/* CSS for the modal */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
+    backdrop-filter: blur(8px); /* Apply background blur */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #121212;
+    margin: 10% auto; /* 10% from the top and centered */
+    padding: 20px;
+    padding-top: 70px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 30%; /* Adjusted width */
+    height: 50%;
+    /* max-width: 500px; Maximum width */
+}
+
+/* Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: rgb(131, 77, 77);
+    text-decoration: none;
+}
+
+/* Login Form */
+.signin-form input[type="text"],
+.signin-form input[type="email"],
+.signin-form input[type="password"],
+.signin-form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #292828;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.signin-form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.signin-form input[type="submit"]:hover {
+    background-color: #59c95f;
+    color: #10ed10;
+}
+
+/* Style the link in the form */
+.signin-form .message {
+    text-align: center;
+}
+
+.signin-form .message a {
+    color: blue;
+    text-decoration: none;
+}
+
+.signin-form .message a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,173 @@
+
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    display:block;
+    background-image: url('./discs.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    width: auto;
+    height: auto;
+    
+
+}
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.desktop {
+    max-width: auto;
+    margin: 2% 5%;
+    padding-left: 4%;
+}
+
+/* Header styles */
+.registration-header {
+    
+    color: white;
+    padding: 10px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.logo-container img {
+    width: 40px;
+    height: auto;
+}
+
+.loaf {
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+/* Main content styles */
+.main {
+    padding: 10px;
+    display: flex;
+}
+
+.welcome h1 {
+    font-style: italic;
+    margin-bottom: 10px;
+    background-color:#212121;
+}
+
+form {
+    max-width: 30%;
+   
+    margin:15% 15% 20% 5%;
+}
+
+.input-field {
+    margin-bottom: 15px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
+
+.logo{
+    display: flexbox;
+    justify-content: space-around;
+    align-items: end;
+}
+.main{
+    position: absolute;
+    width: 50%;
+    height: 60%;
+    top: 22%;
+    left: 8%;
+    color: #f4f4f4;
+    border: #212121 solid;
+    border-radius: 5%;
+    width: 20%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    margin-top: 15px;
+
+}
+input {
+    
+    width: 400px;
+}
+.hello{
+    padding-top: 15%;
+}
+/* Your existing CSS styles */
+
+.logo {
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+}
+
+/* Button styles */
+.button1 {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    display: flex; /* Align the image and text horizontally */
+    align-items: center; /* Center items vertically */
+}
+
+.button1 img {
+    margin-right: 10px; /* Add some space between the image and text */
+}
+
+.button1:hover {
+    background-color: rgb(196, 85, 22);
+}
+
+/* Heading styles */
+.login-text {
+    color: #333; /* Adjust the color as needed */
+    font-size: 24px; /* Adjust the font size as needed */
+    margin-left: 10px; /* Add some space between the button and heading */
+}
+/* Your existing CSS styles */
+
+/* Logo container styles */
+.logo-container {
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+}
+
+/* Image styles */
+.logo-container img {
+    width: 40px; /* Adjust the width as needed */
+    height: auto; /* Maintain the aspect ratio of the image */
+}
+
+/* Heading styles */
+.logo-container .loaf {
+    margin-left: 10px; /* Add some space between the image and heading */
+    font-weight: bold;
+    font-size: 24px; /* Adjust the font size as needed */
+}

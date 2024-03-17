@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./login.css">
+</head>
+<body>
+    <div class="desktop">
+        <header class="registration-header">
+            <div class="header">
+                <div class="logo-container">
+                    <h1 class="loaf">LOFI</h1>
+                </div>
+                <div class="logo">
+                    <button class="button1"><img src="" alt="" width=""></button>
+                    <h1 class="login-text">Log In</h1>
+                </div>
+            </div>
+        </header>
+    </div>
+    <div class="main">
+        <div class="form">
+            <div class="login">
+                <div class="login-header">
+                    <h3>LOGIN</h3>
+                    <p>Please enter your credentials to login.</p>
+                </div>
+            </div>
+            <form class="login-form" action="/login-secret" method="post">
+                <input type="text" name="username" id="username" placeholder="Username">
+                <input type="email" name="email" id="email" placeholder="Email">
+                <input type="password" name="password" id="password" placeholder="Password">
+                <input type="submit" class="button2" value="Login" style="font-family: cursive;">
+                <p class="message">Not registered? <a href="#" id="myBtn">Create an account</a></p>
+            </form>
+         
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+        
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="close">&times;</span>
+                        <h2>Sign In</h2>
+                        <p>Please enter your credentials to login.</p>
+                    </div>
+                    <form class="signin-form" action="/signin-secret" method="post">
+                        <input type="text" name="username" id="username" placeholder="Username">
+                        <input type="email" name="email" id="email" placeholder="Email">
+                        <input type="password" name="password" id="password" placeholder="Password">
+                        <input type="submit" class="button2" value="Sign In" style="font-family: cursive;">
+                        <!-- <p class="message">Not registered? <a href="www.google.com">Create an account</a></p> -->
+                    </form>
+                </div>
+        
+            </div>
+        
+        </div>
+    </div>
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+    
+        // Get the hyperlink that opens the modal
+        var link = document.getElementById("myBtn");
+    
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+    
+        // When the user clicks on the hyperlink, open the modal
+        link.onclick = function() {
+            modal.style.display = "block";
+        }
+    
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+    
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    
+    </script>
+</body>
+
+</html>
